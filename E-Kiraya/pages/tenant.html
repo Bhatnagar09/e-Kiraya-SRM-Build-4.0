@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Kiraya | Owner</title>
+  <link rel="stylesheet" href="./styles/tenant.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="back">
+    <div class="header" >
+        <nav class="navBar">
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/index.html"><img src="../assets/logo.png" style="border-radius: 10px;" width="80px" id="hi" alt="" srcset=""></a>
+            </div>
+                       
+            <button  class="btnConnect" >0x405d5...</button>
+            
+        </nav>    
+        <br>
+    </div>
+    <!-- <br><br><br><br><br><br> -->
+
+    <!-- main section -->
+    <section>
+
+      
+      <!-- hero section -->
+      <div class="main " id="main">
+        
+        <!-- <div id="particles-js"></div> -->
+        <div class="content">
+          <div>
+            <img  width="250px" height="250px" style="border-radius: 50%;margin: 20px;" src="../assets/owner.png" alt="">
+          </div>
+          
+          <div class="formContain">
+            <form action="includes/login.inc.php" class="login" method="post">
+              
+              <div id="what">
+
+                <div class="detailForm">
+                  <div class="col">
+                    
+                    <div class="field">
+                      <h2>Name</h2>
+                      <input type="text" name="roomAddress" class="form-style" placeholder="Enter Your Room Address" id="logemail" autocomplete="off">
+                    </div>
+                    
+                    <br>
+                    
+                    
+                    <div class="field">
+                      <h2>Date</h2>
+                      <input type="date" name="Monthlyamount" class="form-style" placeholder="Monthly amount" id="logpass" autocomplete="off">
+                    </div>
+                    
+                    
+                </div>
+                
+                
+              </div>
+              
+              <div class="col3">
+                <br><br>
+                <h2>Payment Address</h2>
+                <div class="seethrough">
+                 
+                  <br><br>
+                  <img src="../assets/QR.jpg" height="250px" width="250px" alt="" srcset="">
+                </div>
+                <br><br><br>
+                <div class="TokenAmt">
+                  <h2>Token Amount</h2>
+                  <i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<input type="text" name="Monthlyamount" class="form-style" placeholder="Public Address" id="logpass" autocomplete="off">
+                </div>
+                <br>
+                
+              </div>
+              </div>
+              <div class="field field-btn">
+                <div class="btn-layer"></div>
+                <br><br>
+                <p id="connectButton" class="btnConnect1">Payment</p>
+              </div>
+            </form>
+            
+          </div>
+            
+          </div> 
+        </div>
+          <!-- hero section ends -->
+          
+          
+        </section>
+        
+      </body>
+      <script>
+        let ownerSub = document.querySelector(".btnConnect1");
+
+
+
+ownerSub.addEventListener(("click"),()=>{
+alert("Payment Done Successfully")
+});
+      </script>
+      <!-- custome js -->
+<!-- <script src="ownerApp.js"></script> -->
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Kiraya</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="back">
+    <div class="header" >
+        <nav class="navBar">
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/index.html"><img src="./assets/logo.png" style="border-radius: 10px;" width="80px" id="hi" alt="" srcset=""></a>
+            </div>
+                       
+            <button id="connectButton" class="btnConnect">Connect to MetaMask</button>
+            
+        </nav>    
+        <br>
+    </div>
+    <!-- <br><br><br><br><br><br> -->
+
+    <!-- main section -->
+    
+
+    <div>
+      
+      <!-- hero section -->
+      <div class="main " id="main">
+        
+        <!-- <div id="particles-js"></div> -->
+        
+        
+      </div>
+      <!-- hero section ends -->
+
+      <section class="experience" id="experience">
+
+        <h2 class="heading"> You Are </h2>
+    
+        
+          <div class="timeline">
+
+            <div class="container left " id="owner">
+              <div class="content">
+                
+                <div class="desc">
+                  <img src="./assets/owner.png" alt="" srcset="">
+                </div>
+                <!-- <div class="tag">
+                  
+                  <h2><a href="./pages/owner.html" target="_blank">Owner</a></h2>
+                </div> -->
+                
+                
+              </div>
+            </div>
+            
+            <div class="container right" id="tenant">
+              <div class="content">
+                <div class="desc">
+                  <img src="./assets/tenant.png" alt="" srcset="">
+                </div>
+                <!-- <div class="tag">
+                  <h2><a href="./pages/tenant.html" target="_blank">Tenant</a></h2>
+                </div> -->
+              </div>
+            </div>
+          
+          </div>
+
+          <div class="wrapper bgImage">
+            
+            <div class="form-container">
+              <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">OWNER</label>
+                <label id="labSign" for="signup" class="slide signup">Tenant</label>
+            <div class="slider-tab"></div>
+          </div>
+          
+          <div class="form-inner">
+
+            <form  class="login" method="post">
+                <div class="detailForm">
+                  <div class="col">
+
+                    <div class="field">
+                      <h2>Room Address</h2>
+                      <input type="text" name="roomAddress" class="form-style" placeholder="Enter Your Room Address" id="logemail" autocomplete="off">
+                    </div>
+
+                    <br>
+                    
+                    
+                    <div class="field">
+                      <h2>Monthly Amount</h2>
+                      <input type="text" name="Monthlyamount" class="form-style" placeholder="Monthly amount" id="logpass" autocomplete="off">
+                    </div>
+                    <div class="field">
+                      <h2>Necessary Details</h2>
+                      <input type="text" name="Monthlyamount" class="form-style" placeholder="Any other Necessary Data" id="logpass" autocomplete="off">
+                    </div>
+                    
+                  </div>
+
+                  <div class="col2">
+                    
+                    <div class="field">
+                      <h2>Security Deposit</h2>
+                      <input type="text" name="roomAddress" class="form-style" placeholder="Enter Your Room Address" id="logemail" autocomplete="off">
+                    </div>
+                    
+                    <br>
+                    
+                  </div>
+                </div>
+                <div class="uploads">
+                  <h2>Upload Images...</h2>
+                  <br><br>
+                  <div class="upFiles">
+
+                    <input type="file" placeholder="+">
+                    <input type="file" placeholder="+">
+                    <input type="file" placeholder="+">
+
+                  </div>
+                </div>
+                <div class="nextBtn">
+                  <a href="../E-Kiraya/pages/owner.html">
+                    <button class="nextbtn">NEXT</button>
+                  </a>
+                </div>
+                </form>
+                
+                <!-- ##### Signup form ##### -->
+                <div>
+                  <div class="first ">
+                    <img src="./assets/room 1.jpg" alt="">
+                    <div class="hello">
+
+                      <p>32 Preet Vihar, Sonipat, HAryana, 231440</p>
+                    </div>
+                    <button class="Choice" >Generate New Request</button>
+                  </div>
+                  <div class="first ">
+                    <img src="./assets/room2.jpg" alt="">
+                    <div class="hello">
+
+                      <p>304 A, Ram Nagar, Ramapuram, chennai, Tamil Nadu , 10034</p>
+
+                    </div>
+                    <button class="Choice">Generate New Request</button>
+                  </div>
+
+                  <div>
+                    <a href="../E-Kiraya/pages/tenant.html">
+                      <button class="nextbtn">NEXT</button>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+              
+              
+
+
+        <section id="auth-section">
+          
+      
+      
+      </section>
+    
+    
+    </div>
+    
+    </section>
+    
+    <!-- experience section ends -->
+    </div>
+
+  </div>
+  
+  <script>
+      async function connectToMetaMask() {
+          try {
+              // Check if MetaMask is installed
+              if (window.ethereum) {
+                  // Request account access
+                  await window.ethereum.request({ method: 'eth_requestAccounts' });
+                  console.log('Connected to MetaMask');
+              } else {
+                  console.error('MetaMask not detected. Please install MetaMask.');
+              }
+          } catch (error) {
+              console.error('Error connecting to MetaMask:', error.message);
+          }
+      }
+
+      document.getElementById('connectButton').addEventListener('click', connectToMetaMask);
+  </script>
+  <script>(function(w, d) { w.CollectId = "657483f320465d1aa0f1cfd8"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+</body>
+<!-- particles effect js -->
+<!-- <script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script> -->
+
+<!-- custome js -->
+<script src="app.js"></script>
+
+
+</html>
